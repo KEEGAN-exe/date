@@ -9,7 +9,9 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  background-image: url("owo.png");
+  background-color: #ebc8c0;
+  background-image: url("https://enlabedev.github.io/valentine-day/images/mini-hearth.png");
+  background-size: 75%;
   overflow: hidden;
 }
 
