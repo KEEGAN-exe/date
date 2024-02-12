@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-image: url("owo.png");
+  overflow: hidden;
+}
+
+.container {
+  width: 900px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.897);
+  border: 5px dashed red;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+  align-items: center;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-size: 65px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 180px;
+  width: 100%;
+  gap: 20px;
+  position: relative;
+}
+
+.buttons-container button {
+  width: 350px;
+  height: 50px;
+  margin: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s;
+  background-color: tomato;
+  color: white;
+}
+
+.buttons-container .movement {
+  position: absolute;
+  top: 9%;
+  right: 0;
+  background-color: whitesmoke;
+  color: black;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 250px;
+    height: 350px;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .container h1 {
+    font-size: 30px;
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  .buttons-container button {
+    width: 110px;
+    margin: 10px;
+  }
+
+  .buttons-container .movement{
+    top: 55px;
+  }
+}
